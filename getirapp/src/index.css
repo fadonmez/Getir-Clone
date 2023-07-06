@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html,
+  body {
+    font-family: "Open Sans", sans-serif;
+    @apply antialiased bg-gray-100;
+  }
+}
+.flag-select {
+  @apply !pb-0;
+}
+
+.flag-select button {
+  @apply h-14 hover:border-primary transition-colors rounded;
+}
+
+.flag-select button span {
+  @apply text-sm;
+}
